@@ -1,6 +1,6 @@
 import { Row, Col, Typography, Button, Rate, Breadcrumb, Card, message } from 'antd';
 import { useState } from 'react';
-import sofaVideo from '../assets/sofaVedio.mp4';  // path apne folder structure ke according adjust karein
+import sofaVideo from '../assets/sofaVedio.mp4';  
 import './CressidaChair.css';
 
 const { Title, Paragraph } = Typography;
@@ -9,9 +9,9 @@ export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   
   const image1 = 'https://i.postimg.cc/jwJjZddQ/image1.png';
-  const image2 = 'https://i.postimg.cc/MKvKJc3B/image3.jpg'; // Yeh same URL hai, different chahiye?
-  const image3 = 'https://i.postimg.cc/0b1qpNs9/image2.jpg'; // Yeh same URL hai, different chahiye?
-  const image4 = 'https://i.postimg.cc/HV1CQLgs/image4.jpg'; // Yeh same URL hai, different chahiye?
+  const image2 = 'https://i.postimg.cc/MKvKJc3B/image3.jpg';
+  const image3 = 'https://i.postimg.cc/0b1qpNs9/image2.jpg'; 
+  const image4 = 'https://i.postimg.cc/HV1CQLgs/image4.jpg';
   const sofaBgImg = 'https://i.postimg.cc/L6w49HG7/Maskgroup.jpg';
   const [mainImage, setMainImage] = useState(image1); 
   const [activeThumb, setActiveThumb] = useState(0);
@@ -24,7 +24,6 @@ export default function ProductDetail() {
   const rectangleImage2 = 'https://i.postimg.cc/nCKfTtFn/Rectangle2.jpg'; 
   const rectangleImage3 = 'https://i.postimg.cc/2VdNTfkr/Rectangle3.jpg'; 
   const rectangleImage4 = 'https://i.postimg.cc/ryhx9rt0/Rectangle4.jpg'; 
-  // const rectangleImage5 = 'https://i.postimg.cc/cgV67Nsb/Maskgroup.jpg'; 
 
   // const videoUrl = './Muntaha/assets/sofaVedio.mp4';
 
@@ -225,7 +224,7 @@ export default function ProductDetail() {
     controls
     preload="metadata"
     playsInline
-    poster={sofaBgImg}  // optional: loading ke time thumbnail dikhane ke liye
+    poster={sofaBgImg}  
   >
     <source src={sofaVideo} type="video/mp4" />
     Your browser does not support the video tag.

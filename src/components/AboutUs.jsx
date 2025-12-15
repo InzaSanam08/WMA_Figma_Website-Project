@@ -26,7 +26,6 @@ function HeroSection() {
   const [animatedProgress, setAnimatedProgress] = useState(false);
   const progressRef = useRef();
 
-  // Define all image URLs as variables
   const bgImage = '	https://i.postimg.cc/Vd3PWBbS/about-Us-BG.jpg';
   const imgGrid1 = 'https://i.postimg.cc/WhQcw6JF/img-grid1.jpg';
   const imgGrid2 = 'https://i.postimg.cc/ppgMJYnL/img-grid2.jpg';
@@ -277,7 +276,7 @@ function HeroSection() {
         </Row>
       </div>
 
-        {/* --- Product Grid Section (Updated with Class) --- */}
+        {/* --- Product Grid Section --- */}
       <div className="product-grid-section">
         <div className="product-grid-container">
           {products.map((product, index) => (
@@ -395,7 +394,7 @@ function HeroSection() {
                 {steps.map((step) => (
                     <div
                         key={step.id}
-                        className="step-card-modified" // Use a class for modified step styling
+                        className="step-card-modified"
                         style={{
                             position: 'relative',
                             textAlign: 'center'
@@ -414,7 +413,7 @@ function HeroSection() {
                                 alt={step.title}
                                 style={{
                                     width: '100%',
-                                    height: '400px', // Set height inline for consistency
+                                    height: '400px', 
                                     objectFit: 'cover',
                                     display: 'block'
                                 }}
